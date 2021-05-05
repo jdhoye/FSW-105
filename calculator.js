@@ -2,7 +2,7 @@ var readlineSync = require('readline-Sync');
 
 var numOne = readlineSync.questionInt('Please enter your first number: ');
 var numTwo = readlineSync.questionInt('Please enter your second number: ');
-var operator = readlineSync.question('Please enter the operation to perform: add, sub, mul, div: ');
+var operator = readlineSync.question('Which operation would you like to perform? add, sub, mul, div: ');
 
 function add(a, b) {
     let addNumber = a + b;
@@ -34,5 +34,5 @@ if (operator == "add") {
 } else if (operator == "sub") {
     sub(numOne, numTwo);
 } else {
-    console.log("Try again")
+    console.log("Something went wrong! Please, try again")
 }

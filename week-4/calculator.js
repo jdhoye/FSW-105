@@ -24,15 +24,18 @@ function sub(a, b) {
     console.log(numOne + " - " + numTwo + " is: " + subNumber )
 }
 
-
-if (operator == "add") {
-    add(numOne, numTwo);
-} else if (operator == "mul") {
-    mul(numOne, numTwo);
-} else if (operator == "div") {
-    div(numOne, numTwo);
-} else if (operator == "sub") {
-    sub(numOne, numTwo);
-} else {
-    console.log("Something went wrong! Please, try again")
+function myCalc(num1, num2, calcOperation){
+    if (calcOperation == "add") {
+        add(num1, num2);
+    } else if (calcOperation == "mul") {
+        mul(num1, num2);
+    } else if (calcOperation == "div") {
+        div(num1, num2);
+    } else if (calcOperation == "sub") {
+        sub(num1, num2);
+    } else {
+        console.log("Something went wrong! Please, try again")
+    }
 }
+
+myCalc(numOne, numTwo, operator);
